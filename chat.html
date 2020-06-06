@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Chat | Kakao Clone</title>
 </head>
-<body>
-    <div class="status-bar">
+<body class="chats-body">
+    <div class="header-wrapper">
+        <div class="status-bar">
         <div class="status-bar__column">
             <span class="status-bar__clock">10:26</span>
         </div>
@@ -36,43 +37,68 @@
             </span>
         </div>
     </header>
-    <main class="chat">
+    </div>
+    <main class="chat-screen">
         <ul class="chat__messages">
             <span class="chat__timestamp">Monday, May 25, 2020</span>
             <li class="incoming-message message">
-                <img src="images/avatar.jpg" class="g-avatar message__avatar">
+                <img src="images/avatar.jpg" class="m-avatar message__avatar">
                 <div class="message__content">
-                    <span class="message__author">Best Friend</span>
-                    <div class="message__bubble">
+                    <span class="message__bubble">
                         Congrats I love you!
+                    </span>
+                    <span class="message__author">Best Friend</span>
+                </div>
+            </li>
+            <li class="sent-message message">
+                <div class="message__content">
+                    <span class="message__bubble">
+                        Thank you see you soon!
+                    </span>
                     </div>
                 </div>
-                <span class="message__timestamp"></span>
             </li>
             <li class="incoming-message message">
-                <span class="message__timestamp"></span>
+                <img src="images/avatar.jpg" class="m-avatar message__avatar">
                 <div class="message__content">
-                    <div class="message__bubble">
+                    <span class="message__bubble">
+                        Congrats I love you!
+                    </span>
+                    <span class="message__author">Best Friend</span>
+                </div>
+            </li>
+            <li class="sent-message message">
+                <div class="message__content">
+                    <span class="message__bubble">
                         Thank you see you soon!
+                    </span>
                     </div>
                 </div>
             </li>
         </ul>
     </main>
-    <div class="chat__write"></div>
-    <div class="chat__write-column">
-        <i class="far fa-plus-square"></i>
-    </div>
-    <div class="chat__write-column">
-        <input type="text" placeholder="Send message">
-    </div>
-    <div class="chat__write-column">
-        <span class="chat__write-icon">
-            <i class="far fa-smile-wink"></i>
-        </span>
+    <div class="chat__write--container">
+        <input 
+            type="text"
+            class = "chat__write"
+            placeholder="Send message"
+            class="chat__write-input"
+        />
+        <div class="chat__icon-left chat__icon">
+            <i class="far fa-plus-square"></i>
+        </div>
+        <div class="chat__icon-right chat__icon">
+            <span class="chat__write-icon">
+                <i class="far fa-smile-wink"></i>
+            </span>
         <span class="chat__write-icon">
             <i class="fas fa-microphone"></i>
         </span>
-    </div>
+</div>
+<div class="bigScreen">
+    <span class="bigScreen_text">
+        Please make your screen small!
+    </span>
+</div>
 </body>
 </html>
